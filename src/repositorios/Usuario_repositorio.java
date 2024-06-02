@@ -1,8 +1,6 @@
 package repositorios;
 //import java.sql.*;
 
-import java.util.List;
-
 //
 /*
 //CRIAR A CONEXÃO COM O BANCO DE DADOS
@@ -118,7 +116,7 @@ public class Usuario_repositorio extends Repositorio_Base<Usuario_Login> impleme
 
 	public void mostrarTamanhoDaFila(Scanner sc, Usuario_Login usuarioVindoDoMenu) throws EntradaInvalida {
 
-	        
+	       
 	        System.out.println(tamanho);
 
 	        System.out.print("Deseja ver a lista de todos os usuarios(s/n): ");

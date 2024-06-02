@@ -88,7 +88,7 @@ public class Usuario_Servico implements Iusuario {
 			System.out.println("CONFIRME SUA SENHA: ");
 			confirmacaoDeSenha = confirmaçãoSenha(senha, scanner.nextLine().trim());
 
-			Usuario_Login adicionar_usuario = new Usuario_Login(nome, email, senha);
+			Usuario_Login adicionar_usuario = new Usuario_Login(senha, email, nome);
 			new Usuario_dados().Cadastro_Usuario(adicionar_usuario);
 
 			new Menu_Servico().menu_geral(scanner, adicionar_usuario);;

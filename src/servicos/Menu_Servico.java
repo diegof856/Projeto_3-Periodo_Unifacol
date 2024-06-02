@@ -2,7 +2,6 @@ package servicos;
 
 import java.util.Scanner;
 
-import acesso_dados.Usuario_dados;
 import entidade.Usuario_Login;
 import excecoes.EntradaInvalida;
 import repositorios.Usuario_repositorio;
@@ -68,9 +67,9 @@ public class Menu_Servico {
 		
 		case 1:
 			System.out.println("Quantidade de Usuarios");
-			Usuario_repositorio repo = new Usuario_repositorio();
-			new Usuario_dados().listar_usuario();
-			repo.mostrarTamanhoDaFila(ScannerUsuario, usuario );
+		 new Usuario_repositorio().mostrarTamanhoDaFila(ScannerUsuario, usuario);;
+				
+			
 			menu_usuario(ScannerUsuario, usuario);
 		case 2:
 			System.out.println("REMOVER USUÁRIO");

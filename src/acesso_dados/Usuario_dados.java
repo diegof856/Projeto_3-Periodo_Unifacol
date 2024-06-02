@@ -99,9 +99,9 @@ public class Usuario_dados implements IUsuario_dados {
 	    try {
 	        pegaUsuarios = this.conexao.prepareStatement("SELECT * FROM test.usuario ORDER BY Name");
 	        resultado = pegaUsuarios.executeQuery();
-	        Usuario_Login usuario = new Usuario_Login();
+	       
 	        while (resultado.next()) {
-	        	 
+	        	 Usuario_Login usuario = new Usuario_Login();
 	        	  
 	            usuario.setId(resultado.getInt("idUsuario"));
 	            usuario.setNome(resultado.getString("nome"));
